@@ -1,0 +1,22 @@
+{
+  "name": "Crisis Info",
+  "short_name": "Crisis Info",
+  "description": "クライシスインフォ - 災害時に必要な情報やリンク集をウェブアプリで提供",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "https://crisis.dotplants.net/"
+}

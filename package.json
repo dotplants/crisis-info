@@ -1,5 +1,7 @@
 {
-  "name": "crisis-links",
+  "name": "crisis-info",
+  "version": "1.0.0",
+  "description": "クライシスインフォ - 災害時に必要な情報やリンク集をウェブアプリで提供",
   "repository": "https://github.com/dotplants/crisislink.git",
   "author": "dotPlants HQ <oss@dotplants.net>",
   "license": "MIT",
@@ -23,6 +25,7 @@
     "@yuzulabo/eslint-config": "^1.0.1",
     "@yuzulabo/prettier-config": "^1.0.1",
     "eslint": "^6.5.1",
+    "eslint-plugin-react": "^7.16.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "stylelint": "^11.1.1",
@@ -33,10 +36,14 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.3.1",
+    "fuse.js": "^3.4.5",
     "next": "^9.1.1",
+    "next-offline": "^4.0.6",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "reactstrap": "^8.0.1"
   },
   "prettier": "@yuzulabo/prettier-config"
 }
