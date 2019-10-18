@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Fuse from 'fuse.js';
 
-import data from '../../public/static/data.json';
+import data from '../../data';
 
 const options = {
   shouldSort: true,

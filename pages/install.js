@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -9,8 +10,8 @@ const Install = () => {
     <>
       <Header hideSearch />
 
-      <div className="container">
-        <h2 className="mb-4 text-center">インストール方法</h2>
+      <Container>
+        <h2 className="mb-4">インストール方法</h2>
 
         <p>
           ウェブアプリをインストールすると、オフライン時でも Crisis Info
@@ -21,10 +22,10 @@ const Install = () => {
         <h3>iOS の場合</h3>
         <ol>
           <li>
-            Safari から{' '}
+            Safari から
             <Link href="/">
               <a>Crisis Info</a>
-            </Link>{' '}
+            </Link>
             を開きます。
           </li>
           <li>
@@ -36,10 +37,10 @@ const Install = () => {
         <h3>Android の場合</h3>
         <ol>
           <li>
-            Chrome から{' '}
+            Chrome から
             <Link href="/">
               <a>Crisis Info</a>
-            </Link>{' '}
+            </Link>
             を開きます。
           </li>
           <li>
@@ -49,7 +50,7 @@ const Install = () => {
             追加をタップし、次の画面でも自動的に追加をタップすればインストールされます。
           </li>
         </ol>
-      </div>
+      </Container>
 
       <Footer />
     </>

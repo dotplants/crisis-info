@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import { Container } from 'reactstrap';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -17,14 +18,25 @@ const spl = (str, arr = []) => {
 
 const Index = () => {
   const { loc } = useRouter().query;
-  const locList = loc ? spl(loc) : [];
+  const [openedColumn, setOpenedColumn] = useState(loc);
+
+  const locList = loc ? spl(loc) : []; // loc === undefined -> index page
+  const setOpen = id => setOpenedColumn(openedColumn === id ? null : id);
 
   return (
     <>
       <Header />
+      <Container>
+        {loc && <small>地域名を選択して展開できます</small>}
+      </Container>
 
       {locList.map((id, key) => (
-        <Column id={id} key={key} />
+        <Column
+          id={id}
+          key={key}
+          isOpen={openedColumn === id}
+          setOpen={() => setOpen(id)}
+        />
       ))}
 
       <Footer hideGoToTop={!loc} />
